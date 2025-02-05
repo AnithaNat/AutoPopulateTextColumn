@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="AutoPopulateTextColumn" constructor="AutoPopulateTextColumn" version="0.0.14" display-name-key="AutoPopulateTextColumn" description-key="AutoPopulateTextColumn description" control-type="standard" >  
+    <property name="boundTextProperty" display-name-key="BoundTextProperty_Display_Key" description-key="BoundTextProperty_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="configValue" display-name-key="ConfigValue_Display_Key" description-key="ConfigValue_Desc_Key" of-type="Multiple" usage="input" required="false" />
+    <property name="String1" display-name-key="String1_Display_Key" description-key="String1_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="String2" display-name-key="String2_Display_Key" description-key="String2_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="String3" display-name-key="String3_Display_Key" description-key="String3_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="Lookup1" display-name-key="Lookup1_Display_Key" description-key="Lookup1_Desc_Key" of-type="Lookup.Simple" usage="input" required="false" />
+    <property name="Lookup2" display-name-key="Lookup2_Display_Key" description-key="Lookup2_Desc_Key" of-type="Lookup.Simple" usage="input" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <resx path="strings/AutoPopulateTextColumn.1033.resx" version="1.0.0" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/AutoPopulateTextColumn.css" order="1" />
+      
+      -->
+    </resources>  
+    
+    <feature-usage>
+    <uses-feature name="WebAPI" required="true" />
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" /> 
+    -->
+    </feature-usage>
+  </control>
+</manifest>
